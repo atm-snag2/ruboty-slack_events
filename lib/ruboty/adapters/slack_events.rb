@@ -43,7 +43,8 @@ module Ruboty
               ```
             MARKDOWN
           else
-            slackify.call(message[:body])
+            # slackify.call(message[:body])
+            message[:body]
           end
 
         slack_client.chat_postMessage(
